@@ -1,46 +1,46 @@
-# BaD: Задача-пазл
+# Puzzle
 
-## Опис
+## Description
 
-Цей проект реалізує програму для вирішення задачі з побудови найдовшої послідовності чисел, де кожне число завершується двома останніми цифрами наступного числа. Програма дозволяє користувачам завантажувати файл з числами, знаходити найдовший шлях у вигляді графа та виводити результат у докладному та компактному форматах.
+This project implements a program to solve a problem of building the longest sequence of numbers, where each number ends with the last two digits of the next number. The program allows users to upload a file with numbers, find the longest path in the form of a graph, and display the result in both detailed and compact formats.
 
-## Функціональність
+## Functionality
 
-1. **Зчитування даних з файлу:** Користувач може вибрати текстовий файл, що містить числа, для подальшої обробки.
-2. **Побудова графа:** Кожне число порівнюється з іншими числами для побудови графа, де ребра з'єднують числа, що мають спільні цифри.
-3. **Пошук найдовшого шляху:** Програма знаходить найдовший шлях, що проходить через числа в графі, де кожне число завершується двома останніми цифрами наступного.
-4. **Виведення результатів:** Результати представлені у двох форматах:
-   - **Докладний результат:** Виводить шлях з числами та їх відповідними цифрами.
-   - **Компактний результат:** Виводить спрощену форму шляху.
+1. **Reading data from a file:** The user can select a text file containing numbers for further processing.
+2. **Building the graph:** Each number is compared with others to build a graph where edges connect numbers that share the same last two digits.
+3. **Finding the longest path:** The program finds the longest path through the numbers in the graph, where each number ends with the last two digits of the next one.
+4. **Displaying results:** The results are presented in two formats:
+   - **Detailed result:** Shows the path with the numbers and their corresponding digits.
+   - **Compact result:** Displays the simplified form of the path.
 
-## Вимоги
+## Requirements
 
 - Python 3.x
-- Бібліотеки:
-  - `tkinter` (для створення графічного інтерфейсу)
+- Libraries:
+  - `tkinter` (for creating the graphical interface)
   - `collections`
 
-## Інструкції з використання
+## Instructions
 
-1. Переконайтеся, що у вас встановлений Python 3.x. Для перевірки введіть:
+1. Make sure you have Python 3.x installed. To check, enter:
    ```bash
    python --version
    ```
 
-2. Запустіть програму:
+2. Run the program:
    ```bash
    python BAD_test.py
    ```
 
-3. Виберіть текстовий файл з числами за допомогою кнопки "Вибрати файл".
+3. Select a text file with numbers using the "Choose File" button.
 
-4. Програма обробить дані та відобразить два варіанти результатів:
-   - **Докладний результат** (покажуться числові значення з їх відповідними цифрами).
-   - **Компактний результат** (спрощений формат без додаткових символів).
+4. The program will process the data and display two types of results:
+   - **Detailed result** (will show numerical values with their corresponding digits).
+   - **Compact result** (a simplified format without extra symbols).
 
-## Приклад входу
+## Sample Input
 
-Файл може містити список чисел, кожне з яких знаходиться на новому рядку. Наприклад:
+The file may contain a list of numbers, each on a new line. For example:
 
 ```
 123456
@@ -49,9 +49,9 @@
 345678
 ```
 
-## Приклад результату
+## Sample Output
 
-Після обробки програма виведе щось подібне до цього:
+After processing, the program will display something like this:
 
-- **Докладний результат:** `1234(56)78(90)12(34)56`
-- **Компактний результат:** `1234567890123456`
+- **Detailed result:** `1234(56)78(90)12(34)56`
+- **Compact result:** `1234567890123456`
