@@ -29,7 +29,7 @@ This project implements a program to solve a problem of building the longest seq
 
 2. Run the program:
    ```bash
-   python BAD_test.py
+   python puzzle.py
    ```
 
 3. Select a text file with numbers using the "Choose File" button.
